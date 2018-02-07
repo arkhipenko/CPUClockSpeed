@@ -1,11 +1,15 @@
+// These lines are for testing on an Arduino ATTiny:
 #include <Arduino.h>
 #include <SoftSerial.h>
 const int rx = 4;
 const int tx = 3;
 #define   S   mySerial
 SoftSerial mySerial(rx, tx); // RX, TX
+// end
 
+// Uncomment this to test on Arduino UNO, Nano, ESPx, Teensy:
 //#define S Serial
+// end
 
 unsigned long t1, t2, cnt;
 void setup() {
